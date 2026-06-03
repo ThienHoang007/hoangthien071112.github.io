@@ -187,6 +187,7 @@ body {
     margin-bottom: 28px;
 }
 
+/* Main Layout */
 .about-container {
     max-width: 950px;
     margin: 0 auto;
@@ -207,8 +208,7 @@ body {
 .about-image-box {
     background-color: #24272e;
     border-radius: 16px;
-    padding: 20px;
-
+    padding: 18px;
     height: 100%;
 }
 
@@ -216,7 +216,6 @@ body {
 .about-image {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
     display: block;
     border-radius: 4px;
@@ -226,7 +225,7 @@ body {
 .about-content-box {
     background-color: #24272e;
     border-radius: 9px;
-    padding: 24px 28px;
+    padding: 22px 26px;
 
     color: #ffffff;
     font-size: 16px;
@@ -234,7 +233,7 @@ body {
 }
 
 .about-content-box p {
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .about-content-box p:last-child {
@@ -249,7 +248,7 @@ body {
 /* Responsive */
 @media (max-width: 900px) {
     .about-section {
-        padding: 70px 22px;
+        padding: 55px 22px;
     }
 
     .about-title {
