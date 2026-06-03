@@ -82,15 +82,13 @@ body {
 }
 
 .pixel-character {
-    width: 280px;
+    width: 320px;
     height: auto;
 
     image-rendering: pixelated;
     image-rendering: crisp-edges;
 
     filter: drop-shadow(14px 16px 6px rgba(0, 0, 0, 0.35));
-
-    animation: pixelFloat 2.5s ease-in-out infinite;
 }
 
 /* Name */
@@ -99,7 +97,11 @@ body {
     font-weight: 800;
     color: #f3efe6;
     letter-spacing: 1px;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+}
+
+.home-text {
+    margin-top: 40px;
 }
 
 /* Line */
