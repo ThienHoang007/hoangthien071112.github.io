@@ -82,7 +82,7 @@ body {
 }
 
 .pixel-character {
-    width: 320px;
+    width: 400px;
     height: auto;
 
     image-rendering: pixelated;
@@ -93,15 +93,15 @@ body {
 
 /* Name */
 .home h1 {
-    font-size: 70px;
+    font-size: 60px;
     font-weight: 800;
     color: #f3efe6;
     letter-spacing: 1px;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
 }
 
 .home-text {
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 /* Line */
