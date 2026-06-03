@@ -173,31 +173,28 @@ body {
 /* About Section */
 .about-section {
     width: 100%;
-    min-height: 100vh;
     background-color: #15161c;
-    padding: 80px 40px 90px;
+    padding: 60px 40px 55px;
     color: #f3efe6;
 }
 
 /* Title */
 .about-title {
     text-align: center;
-    font-size: 58px;
+    font-size: 52px;
     font-weight: 300;
     color: #f3efe6;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
 }
 
-/* Main Layout */
 .about-container {
-    max-width: 1050px;
+    max-width: 950px;
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 350px 1fr;
-    gap: 28px;
+    grid-template-columns: 300px 1fr;
+    gap: 24px;
 
-    /* Quan trọng: cho 2 cột cao bằng nhau */
     align-items: stretch;
 }
 
