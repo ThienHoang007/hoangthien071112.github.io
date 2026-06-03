@@ -1,19 +1,200 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Thien Hoang Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thien Hoang - Unity Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Thien Hoang</h1>
-    <h2>Unity Game Developer</h2>
 
-    <p>Welcome to my portfolio.</p>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <h2 class="logo">Thien Hoang</h2>
 
-    <h3>Projects</h3>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <ul>
-        <li>Project 1</li>
-        <li>Project 2</li>
-    </ul>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hello">Hello, I'm</p>
+            <h1>Thien Hoang</h1>
+            <h2>Unity Game Developer</h2>
+
+            <p class="hero-description">
+                I develop 2D mobile games using Unity and C#. 
+                I focus on gameplay programming, UI systems, game architecture, 
+                mobile optimization, advertisements, and in-app purchases.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about-container">
+            <div class="about-text">
+                <p>
+                    I am a Unity Game Developer with experience in developing 2D mobile games
+                    for Android platforms. I have worked with gameplay systems, UI development,
+                    player data management, Google AdMob, Unity IAP, and JSON data.
+                </p>
+
+                <p>
+                    I enjoy building clean, scalable, and maintainable game systems.
+                    My goal is to become a professional Unity Developer and contribute to
+                    high-quality commercial game projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section dark-section">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>C#, C++, OOP, SOLID Principles</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Unity Development</h3>
+                <p>Gameplay Programming, UI System, Animation, Audio, Scene Management</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Design Patterns</h3>
+                <p>Singleton, Observer, Object Pooling, State Machine, Factory Pattern</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Mobile Game</h3>
+                <p>Android Build, Google AdMob, Unity IAP, JSON Data Management</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>Unity, Visual Studio, Git, Figma, Aseprite</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-container">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-video">
+                    <!-- Thay link video vào đây -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="Project 1 Video"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="project-info">
+                    <h3>Project 01 - Mobile Game</h3>
+
+                    <p>
+                        A 2D mobile game developed with Unity and C#. 
+                        The project focuses on gameplay mechanics, UI systems,
+                        player progression, data saving, and mobile optimization.
+                    </p>
+
+                    <h4>My Role</h4>
+                    <p>Unity Developer</p>
+
+                    <h4>Technologies</h4>
+                    <p>Unity, C#, AdMob, JSON, Unity UI</p>
+
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Developed core gameplay mechanics</li>
+                        <li>Built UI and menu systems</li>
+                        <li>Managed player data using JSON</li>
+                        <li>Integrated Google AdMob advertisements</li>
+                        <li>Optimized performance for Android devices</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-video">
+                    <!-- Thay link video vào đây -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                        title="Project 2 Video"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="project-info">
+                    <h3>Project 02 - Merge Hero System</h3>
+
+                    <p>
+                        A character management and merge system developed in Unity.
+                        The project includes hero purchasing, upgrading, merging,
+                        popup management, and player guidance systems.
+                    </p>
+
+                    <h4>My Role</h4>
+                    <p>Unity Developer</p>
+
+                    <h4>Technologies</h4>
+                    <p>Unity, C#, Scriptable Object, JSON, Unity UI</p>
+
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Developed hero purchase system</li>
+                        <li>Implemented hero upgrade mechanics</li>
+                        <li>Built character merge functionality</li>
+                        <li>Created popup management system</li>
+                        <li>Designed tutorial and guide arrow system</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section dark-section">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-container">
+            <p>Email: <a href="mailto:hoangthien071112@gmail.com">hoangthien071112@gmail.com</a></p>
+            <p>GitHub: <a href="#" target="_blank">Your GitHub Link</a></p>
+            <p>LinkedIn: <a href="#" target="_blank">Your LinkedIn Link</a></p>
+            <p>Phone: Your Phone Number</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Thien Hoang. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
