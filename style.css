@@ -277,6 +277,7 @@ body {
     color: #f3efe6;
 }
 
+/* Main projects panel */
 .projects-panel {
     max-width: 1120px;
     margin: 0 auto;
@@ -290,101 +291,87 @@ body {
     font-size: 52px;
     font-weight: 300;
     color: #f3efe6;
-    margin-bottom: 38px;
+    margin-bottom: 42px;
 }
 
-.projects-container {
+/* Project list */
+.projects-list {
     display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 38px;
 }
 
-/* Project Card */
-.project-card {
+/* Each project has its own background */
+.project-item {
+    border-radius: 18px;
+    padding: 28px;
+}
+
+.project-one {
+    background: linear-gradient(135deg, #1e293b, #243447);
+}
+
+.project-two {
+    background: linear-gradient(135deg, #2b2238, #1f2937);
+}
+
+/* Layout: video left, description right */
+.project-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 24px;
     align-items: stretch;
+}
 
+/* Left box */
+.project-media-box {
     background-color: #24272e;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid #2f3440;
-}
-
-/* Left Video */
-.project-video-box {
-    height: 100%;
-    min-height: 350px;
-    background-color: #111827;
-}
-
-.project-video-box iframe {
-    width: 100%;
-    height: 100%;
-    min-height: 350px;
-    display: block;
-    border: none;
-}
-
-/* Right Content */
-.project-content-box {
-    height: 100%;
-    padding: 28px 30px;
+    border-radius: 14px;
+    padding: 18px;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.project-main-content h3 {
-    font-size: 26px;
-    color: #ffffff;
-    margin-bottom: 14px;
+/* YouTube video */
+.project-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000000;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-.project-main-content > p {
-    color: #e5e7eb;
-    font-size: 16px;
-    line-height: 1.55;
-    margin-bottom: 20px;
-}
-
-/* Info Rows */
-.project-info-row {
-    margin-bottom: 13px;
-}
-
-.project-info-row span {
+.project-video iframe {
+    width: 100%;
+    height: 100%;
     display: block;
-    color: #38bdf8;
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 3px;
+    border: none;
 }
 
-.project-info-row p {
-    color: #f3efe6;
-    font-size: 15.5px;
-    line-height: 1.45;
-}
-
-/* Buttons */
+/* Buttons below video */
 .project-buttons {
+    margin-top: 18px;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 14px;
-    margin-top: 25px;
 }
 
 .project-btn {
+    min-width: 145px;
+    height: 46px;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 9px;
 
-    padding: 12px 18px;
-    border-radius: 8px;
-
+    border-radius: 9px;
     text-decoration: none;
+
     font-size: 15px;
     font-weight: 700;
 
@@ -392,31 +379,57 @@ body {
 }
 
 .project-btn i {
-    font-size: 18px;
+    font-size: 19px;
 }
 
-/* Google Play Button */
-.google-play-btn {
+/* Google Play button */
+.play-btn {
     background-color: #38bdf8;
     color: #020617;
 }
 
-.google-play-btn:hover {
+.play-btn:hover {
     background-color: #0ea5e9;
     transform: translateY(-2px);
 }
 
-/* GitHub Button */
+/* GitHub button */
 .github-btn {
     background-color: #111827;
     color: #ffffff;
-    border: 1px solid #475569;
+    border: 1px solid #64748b;
 }
 
 .github-btn:hover {
     background-color: #000000;
     border-color: #ffffff;
     transform: translateY(-2px);
+}
+
+/* Right description box */
+.project-description-box {
+    background-color: #24272e;
+    border-radius: 14px;
+    padding: 26px 30px;
+
+    color: #ffffff;
+}
+
+.project-description-box h3 {
+    font-size: 27px;
+    margin-bottom: 18px;
+    color: #ffffff;
+}
+
+.project-description-box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e5e7eb;
+    margin-bottom: 16px;
+}
+
+.project-description-box p:last-child {
+    margin-bottom: 0;
 }
 
 /* Responsive */
@@ -433,13 +446,12 @@ body {
         font-size: 42px;
     }
 
-    .project-card {
-        grid-template-columns: 1fr;
+    .project-item {
+        padding: 20px;
     }
 
-    .project-video-box,
-    .project-video-box iframe {
-        min-height: 250px;
+    .project-layout {
+        grid-template-columns: 1fr;
     }
 
     .project-buttons {
