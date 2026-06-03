@@ -82,7 +82,7 @@ body {
 }
 
 .pixel-character {
-    width: 240px;
+    width: 280px;
     height: auto;
 
     image-rendering: pixelated;
@@ -93,27 +93,13 @@ body {
     animation: pixelFloat 2.5s ease-in-out infinite;
 }
 
-@keyframes pixelFloat {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-10px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
 /* Name */
 .home h1 {
-    font-size: 76px;
+    font-size: 70px;
     font-weight: 800;
     color: #f3efe6;
     letter-spacing: 1px;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
 }
 
 /* Line */
