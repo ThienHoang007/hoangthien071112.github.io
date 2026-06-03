@@ -82,7 +82,7 @@ body {
 }
 
 .pixel-character {
-    width: 380px;
+    width: 280px;
     height: auto;
 
     image-rendering: pixelated;
@@ -272,18 +272,18 @@ body {
 /* Projects Section */
 .projects-section {
     width: 100%;
-    background-color: #0f172a;
+    background-color: #101828; /* màu nền project khác About Me */
     padding: 70px 40px;
     color: #f3efe6;
 }
 
-/* One main background like About Me */
+/* Không tạo thêm nền lớn bên trong */
 .projects-panel {
     max-width: 1100px;
     margin: 0 auto;
-    background-color: #15161c;
-    padding: 55px 50px;
-    border-radius: 18px;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
 }
 
 /* Title */
@@ -299,29 +299,33 @@ body {
 .projects-container {
     display: flex;
     flex-direction: column;
-    gap: 28px;
+    gap: 34px;
 }
 
-/* Each project row */
+/* Mỗi project là 1 hàng gồm 2 phần */
 .project-card {
     display: grid;
     grid-template-columns: 380px 1fr;
-    gap: 24px;
+    gap: 30px; /* khoảng trống ở giữa video và mô tả */
     align-items: stretch;
 }
 
-/* Left side */
+/* Phần video + button */
 .project-left {
+    background-color: #242c3a;
+    border-radius: 16px;
+    padding: 18px;
+
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    height: 100%;
 }
 
-/* Video outer box */
+/* Video box */
 .project-video-box {
-    background-color: #24272e;
-    border-radius: 14px;
-    padding: 16px;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 0;
 }
 
 .project-video-box iframe {
@@ -333,11 +337,14 @@ body {
     background-color: #000;
 }
 
-/* Buttons under video */
+/* Buttons nằm bên dưới video */
 .project-buttons {
     display: flex;
     justify-content: center;
     gap: 12px;
+
+    margin-top: auto;
+    padding-top: 18px;
 }
 
 /* Button style */
@@ -346,10 +353,12 @@ body {
     padding: 12px 18px;
     border-radius: 9px;
     text-decoration: none;
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
+
     font-size: 15px;
     font-weight: 700;
     transition: 0.25s ease;
@@ -372,7 +381,7 @@ body {
 
 /* GitHub */
 .github-btn {
-    background-color: #24272e;
+    background-color: #1f2937;
     color: #ffffff;
     border: 1px solid #475569;
 }
@@ -383,11 +392,11 @@ body {
     transform: translateY(-2px);
 }
 
-/* Right description box */
+/* Phần mô tả project */
 .project-right {
-    background-color: #24272e;
-    border-radius: 14px;
-    padding: 24px 28px;
+    background-color: #242c3a;
+    border-radius: 16px;
+    padding: 26px 30px;
     color: #ffffff;
 }
 
@@ -414,84 +423,99 @@ body {
         padding: 55px 22px;
     }
 
-    .projects-panel {
-        padding: 40px 24px;
-    }
-
     .projects-title {
         font-size: 42px;
     }
 
     .project-card {
         grid-template-columns: 1fr;
+        gap: 22px;
     }
 
     .project-buttons {
         flex-direction: column;
+        margin-top: 18px;
     }
 
     .project-btn {
         width: 100%;
     }
 }
+
 /* Contact */
-.contact-container {
+.contact-section {
     text-align: center;
+    padding: 60px 40px;
 }
 
-.contact-container p {
-    margin-bottom: 12px;
-    font-size: 18px;
-    color: #cbd5e1;
+.contact-buttons {
+    max-width: 800px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
 }
 
-.contact-container a {
-    color: #38bdf8;
+.contact-btn {
+    width: 160px;
+    height: 56px;
+
+    background-color: #15161c;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+
+    color: #ffffff;
     text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    transition: 0.25s ease;
 }
 
-.contact-container a:hover {
-    text-decoration: underline;
+.contact-btn i {
+    font-size: 22px;
 }
 
-/* Footer */
-.footer {
-    background-color: #020617;
-    text-align: center;
-    padding: 25px;
-    color: #94a3b8;
-    border-top: 1px solid #1e293b;
+.contact-btn:hover {
+    transform: translateY(-4px);
+    border-color: #38bdf8;
+    background-color: #1f2937;
+}
+
+/* Icon colors */
+.email-btn i {
+    color: #38bdf8;
+}
+
+.github-btn-contact i {
+    color: #ffffff;
+}
+
+.linkedin-btn i {
+    color: #0a66c2;
+}
+
+.phone-btn i {
+    color: #22c55e;
 }
 
 /* Responsive */
-@media (max-width: 900px) {
-    .navbar {
+@media (max-width: 600px) {
+    .contact-buttons {
         flex-direction: column;
-        gap: 15px;
     }
 
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero h1 {
-        font-size: 42px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .skills-container {
-        grid-template-columns: 1fr;
-    }
-
-    .project-card {
-        grid-template-columns: 1fr;
-    }
-
-    .project-video iframe {
-        min-height: 250px;
+    .contact-btn {
+        width: 100%;
+        max-width: 280px;
     }
 }
