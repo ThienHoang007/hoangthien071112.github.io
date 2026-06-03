@@ -269,6 +269,188 @@ body {
     }
 }
 
+/* Projects Section */
+.projects-section {
+    width: 100%;
+    background-color: #0f172a;
+    padding: 70px 40px;
+    color: #f3efe6;
+}
+
+.projects-panel {
+    max-width: 1120px;
+    margin: 0 auto;
+    background-color: #15161c;
+    padding: 55px 50px;
+    border-radius: 18px;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 52px;
+    font-weight: 300;
+    color: #f3efe6;
+    margin-bottom: 38px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* Project Card */
+.project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+
+    background-color: #24272e;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid #2f3440;
+}
+
+/* Left Video */
+.project-video-box {
+    height: 100%;
+    min-height: 350px;
+    background-color: #111827;
+}
+
+.project-video-box iframe {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    display: block;
+    border: none;
+}
+
+/* Right Content */
+.project-content-box {
+    height: 100%;
+    padding: 28px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-main-content h3 {
+    font-size: 26px;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.project-main-content > p {
+    color: #e5e7eb;
+    font-size: 16px;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+/* Info Rows */
+.project-info-row {
+    margin-bottom: 13px;
+}
+
+.project-info-row span {
+    display: block;
+    color: #38bdf8;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.project-info-row p {
+    color: #f3efe6;
+    font-size: 15.5px;
+    line-height: 1.45;
+}
+
+/* Buttons */
+.project-buttons {
+    display: flex;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    padding: 12px 18px;
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+
+    transition: 0.25s ease;
+}
+
+.project-btn i {
+    font-size: 18px;
+}
+
+/* Google Play Button */
+.google-play-btn {
+    background-color: #38bdf8;
+    color: #020617;
+}
+
+.google-play-btn:hover {
+    background-color: #0ea5e9;
+    transform: translateY(-2px);
+}
+
+/* GitHub Button */
+.github-btn {
+    background-color: #111827;
+    color: #ffffff;
+    border: 1px solid #475569;
+}
+
+.github-btn:hover {
+    background-color: #000000;
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .projects-section {
+        padding: 55px 22px;
+    }
+
+    .projects-panel {
+        padding: 40px 24px;
+    }
+
+    .projects-title {
+        font-size: 42px;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-video-box,
+    .project-video-box iframe {
+        min-height: 250px;
+    }
+
+    .project-buttons {
+        flex-direction: column;
+    }
+
+    .project-btn {
+        width: 100%;
+    }
+}
+
 /* Contact */
 .contact-container {
     text-align: center;
