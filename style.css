@@ -173,99 +173,116 @@ body {
 /* About Section */
 .about-section {
     width: 100%;
+    min-height: 100vh;
     background-color: #15161c;
-    padding: 90px 40px;
+    padding: 80px 40px 90px;
     color: #f3efe6;
 }
 
+/* Title */
 .about-title {
     text-align: center;
-    font-size: 56px;
+    font-size: 58px;
     font-weight: 300;
-    margin-bottom: 35px;
     color: #f3efe6;
+    margin-bottom: 35px;
 }
 
-.about-wrapper {
-    max-width: 1100px;
+/* Main Layout */
+.about-container {
+    max-width: 1050px;
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 380px 1fr;
-    gap: 25px;
+    grid-template-columns: 350px 1fr;
+    gap: 28px;
     align-items: start;
 }
 
-/* Left */
+/* Left Column */
 .about-left {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 22px;
 }
 
-.about-image-card {
+/* Image Box */
+.about-image-box {
     background-color: #24272e;
-    border-radius: 18px;
-    padding: 22px;
+    border-radius: 16px;
+    padding: 20px;
 }
 
 .about-image {
     width: 100%;
-    height: 360px;
+    height: 330px;
     object-fit: cover;
-    border-radius: 4px;
     display: block;
+    border-radius: 4px;
 }
 
-/* Small Note Box */
-.about-note {
-    background-color: #3a3343;
-    border-radius: 10px;
-    padding: 18px 25px;
+/* Interest Box */
+.about-interest-box {
+    background-color: #3a3345;
+    border-radius: 9px;
+    padding: 18px 22px;
     text-align: center;
-    font-size: 17px;
-    color: #f3efe6;
+
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.45;
 }
 
-.about-note p {
-    margin-bottom: 4px;
+.about-interest-box p {
+    margin-bottom: 5px;
 }
 
-/* Right Text Card */
-.about-text-card {
+.interest-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Right Text Box */
+.about-content-box {
     background-color: #24272e;
-    border-radius: 10px;
+    border-radius: 9px;
     padding: 24px 28px;
-    font-size: 17px;
-    line-height: 1.5;
-    color: #f3efe6;
+
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.45;
 }
 
-.about-text-card p {
+.about-content-box p {
     margin-bottom: 18px;
 }
 
-.about-text-card strong {
+.about-content-box p:last-child {
+    margin-bottom: 0;
+}
+
+.about-content-box strong {
     color: #ffffff;
     font-weight: 700;
 }
 
 /* Responsive */
 @media (max-width: 900px) {
-    .about-wrapper {
-        grid-template-columns: 1fr;
+    .about-section {
+        padding: 70px 22px;
     }
 
     .about-title {
         font-size: 42px;
     }
 
-    .about-image {
-        height: 300px;
+    .about-container {
+        grid-template-columns: 1fr;
+        max-width: 520px;
     }
 
-    .about-text-card {
-        font-size: 16px;
+    .about-image {
+        height: 320px;
     }
 }
 
