@@ -82,7 +82,7 @@ body {
 }
 
 .pixel-character {
-    width: 700px;
+    width: 450px;
     height: auto;
 
     image-rendering: pixelated;
